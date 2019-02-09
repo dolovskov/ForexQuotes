@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IOl-he-CN1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Quotes-->
+        <scene sceneID="P5Q-Hg-8Qi">
+            <objects>
+                <viewController id="BET-6o-Mqk" customClass="QuotesViewController" customModule="ForexQuotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RQx-Ze-EpH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="toV-Af-ibY">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.16490915419999999" green="0.1801209748" blue="0.20000481610000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="CqV-dq-JfI">
+                                <rect key="frame" x="169" y="347" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16490915419999999" green="0.1801209748" blue="0.20000481610000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="CqV-dq-JfI" firstAttribute="centerY" secondItem="8ld-u0-xu6" secondAttribute="centerY" id="0be-0L-8lT"/>
+                            <constraint firstItem="CqV-dq-JfI" firstAttribute="centerX" secondItem="8ld-u0-xu6" secondAttribute="centerX" id="6TY-o0-YgW"/>
+                            <constraint firstItem="8ld-u0-xu6" firstAttribute="trailing" secondItem="toV-Af-ibY" secondAttribute="trailing" id="S3F-56-heK"/>
+                            <constraint firstItem="toV-Af-ibY" firstAttribute="leading" secondItem="8ld-u0-xu6" secondAttribute="leading" id="eOf-yl-mmn"/>
+                            <constraint firstItem="8ld-u0-xu6" firstAttribute="bottom" secondItem="toV-Af-ibY" secondAttribute="bottom" id="iQ2-zN-weo"/>
+                            <constraint firstItem="toV-Af-ibY" firstAttribute="top" secondItem="8ld-u0-xu6" secondAttribute="top" id="zhK-Xo-rRT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8ld-u0-xu6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quotes" id="Y7k-cP-ssb"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="CqV-dq-JfI" id="WaH-lY-R7e"/>
+                        <outlet property="tableView" destination="toV-Af-ibY" id="0kZ-do-Zah"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wwy-Ax-pCt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228" y="2.2488755622188905"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VYv-FT-x4f">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IOl-he-CN1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="uoy-1i-FHH">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BET-6o-Mqk" kind="relationship" relationship="rootViewController" id="NPX-2x-ceo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zx7-km-Zwi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="288.80000000000001" y="2.2488755622188905"/>
+        </scene>
+    </scenes>
+</document>

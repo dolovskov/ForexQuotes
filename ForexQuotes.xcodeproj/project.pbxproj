@@ -8,22 +8,58 @@
 
 /* Begin PBXBuildFile section */
 		AB2E401F220EC03C00ABD6D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E401E220EC03C00ABD6D7 /* AppDelegate.swift */; };
-		AB2E4021220EC03C00ABD6D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E4020220EC03C00ABD6D7 /* ViewController.swift */; };
-		AB2E4024220EC03C00ABD6D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2E4022220EC03C00ABD6D7 /* Main.storyboard */; };
-		AB2E4027220EC03C00ABD6D7 /* ForexQuotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB2E4025220EC03C00ABD6D7 /* ForexQuotes.xcdatamodeld */; };
 		AB2E4029220EC03F00ABD6D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2E4028220EC03F00ABD6D7 /* Assets.xcassets */; };
 		AB2E402C220EC03F00ABD6D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2E402A220EC03F00ABD6D7 /* LaunchScreen.storyboard */; };
+		AB2E403A220EC22600ABD6D7 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E4039220EC22600ABD6D7 /* QuotesViewController.swift */; };
+		AB2E403E220EC3C800ABD6D7 /* Quotes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2E403D220EC3C800ABD6D7 /* Quotes.storyboard */; };
+		AB2E404B220EC88500ABD6D7 /* TableBaseAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E404A220EC88500ABD6D7 /* TableBaseAdapter.swift */; };
+		AB2E404F220EC8C500ABD6D7 /* QuotesTableAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E404E220EC8C500ABD6D7 /* QuotesTableAdapter.swift */; };
+		AB2E4052220ECE4800ABD6D7 /* ForexApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E4051220ECE4800ABD6D7 /* ForexApiProvider.swift */; };
+		AB2E4054220EE25E00ABD6D7 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E4053220EE25E00ABD6D7 /* Quote.swift */; };
+		AB2E4057220EE69A00ABD6D7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E4056220EE69A00ABD6D7 /* Extensions.swift */; };
+		AB2E405A220EF71E00ABD6D7 /* SaveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E4059220EF71E00ABD6D7 /* SaveService.swift */; };
+		AB2E405D220EFA0F00ABD6D7 /* QuotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E405C220EFA0F00ABD6D7 /* QuotesService.swift */; };
+		AB2E4060220F070F00ABD6D7 /* QuoteCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E405F220F070F00ABD6D7 /* QuoteCellModel.swift */; };
+		AB2E4064220F105800ABD6D7 /* QuotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E4062220F105800ABD6D7 /* QuotesCell.swift */; };
+		AB2E4065220F105800ABD6D7 /* QuotesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2E4063220F105800ABD6D7 /* QuotesCell.xib */; };
+		AB2E4068220F1E3300ABD6D7 /* TimeConventer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E4067220F1E3300ABD6D7 /* TimeConventer.swift */; };
+		AB2E406B220F23FB00ABD6D7 /* QuotesDefaultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E406A220F23FB00ABD6D7 /* QuotesDefaultPresenter.swift */; };
+		AB2E406D220F240700ABD6D7 /* QuotesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E406C220F240700ABD6D7 /* QuotesPresenter.swift */; };
+		AB2E4070220F248D00ABD6D7 /* QuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E406F220F248D00ABD6D7 /* QuotesView.swift */; };
+		AB2E4073220F24F000ABD6D7 /* QuotesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E4072220F24F000ABD6D7 /* QuotesInteractor.swift */; };
+		AB2E4075220F24FD00ABD6D7 /* QuotesDefaultInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E4074220F24FD00ABD6D7 /* QuotesDefaultInteractor.swift */; };
+		AB2E4077220F254000ABD6D7 /* QuotesAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E4076220F254000ABD6D7 /* QuotesAssembler.swift */; };
+		AB2E4079220F2F9800ABD6D7 /* ForexApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E4078220F2F9800ABD6D7 /* ForexApiConstants.swift */; };
+		AB2E407B220F316700ABD6D7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E407A220F316700ABD6D7 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB2E401B220EC03C00ABD6D7 /* ForexQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForexQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2E401E220EC03C00ABD6D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB2E4020220EC03C00ABD6D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AB2E4023220EC03C00ABD6D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AB2E4026220EC03C00ABD6D7 /* ForexQuotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ForexQuotes.xcdatamodel; sourceTree = "<group>"; };
 		AB2E4028220EC03F00ABD6D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB2E402B220EC03F00ABD6D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB2E402D220EC03F00ABD6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB2E4039220EC22600ABD6D7 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
+		AB2E403D220EC3C800ABD6D7 /* Quotes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quotes.storyboard; sourceTree = "<group>"; };
+		AB2E404A220EC88500ABD6D7 /* TableBaseAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableBaseAdapter.swift; sourceTree = "<group>"; };
+		AB2E404E220EC8C500ABD6D7 /* QuotesTableAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesTableAdapter.swift; sourceTree = "<group>"; };
+		AB2E4051220ECE4800ABD6D7 /* ForexApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForexApiProvider.swift; sourceTree = "<group>"; };
+		AB2E4053220EE25E00ABD6D7 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		AB2E4056220EE69A00ABD6D7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AB2E4059220EF71E00ABD6D7 /* SaveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveService.swift; sourceTree = "<group>"; };
+		AB2E405C220EFA0F00ABD6D7 /* QuotesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesService.swift; sourceTree = "<group>"; };
+		AB2E405F220F070F00ABD6D7 /* QuoteCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCellModel.swift; sourceTree = "<group>"; };
+		AB2E4062220F105800ABD6D7 /* QuotesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesCell.swift; sourceTree = "<group>"; };
+		AB2E4063220F105800ABD6D7 /* QuotesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuotesCell.xib; sourceTree = "<group>"; };
+		AB2E4067220F1E3300ABD6D7 /* TimeConventer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConventer.swift; sourceTree = "<group>"; };
+		AB2E406A220F23FB00ABD6D7 /* QuotesDefaultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesDefaultPresenter.swift; sourceTree = "<group>"; };
+		AB2E406C220F240700ABD6D7 /* QuotesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesPresenter.swift; sourceTree = "<group>"; };
+		AB2E406F220F248D00ABD6D7 /* QuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesView.swift; sourceTree = "<group>"; };
+		AB2E4072220F24F000ABD6D7 /* QuotesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesInteractor.swift; sourceTree = "<group>"; };
+		AB2E4074220F24FD00ABD6D7 /* QuotesDefaultInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesDefaultInteractor.swift; sourceTree = "<group>"; };
+		AB2E4076220F254000ABD6D7 /* QuotesAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesAssembler.swift; sourceTree = "<group>"; };
+		AB2E4078220F2F9800ABD6D7 /* ForexApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForexApiConstants.swift; sourceTree = "<group>"; };
+		AB2E407A220F316700ABD6D7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +93,160 @@
 			isa = PBXGroup;
 			children = (
 				AB2E401E220EC03C00ABD6D7 /* AppDelegate.swift */,
-				AB2E4020220EC03C00ABD6D7 /* ViewController.swift */,
-				AB2E4022220EC03C00ABD6D7 /* Main.storyboard */,
+				AB2E4046220EC70100ABD6D7 /* Adapters */,
+				AB2E4037220EC1DA00ABD6D7 /* Entities */,
+				AB2E4036220EC1CD00ABD6D7 /* Constants */,
+				AB2E4035220EC1B700ABD6D7 /* Services */,
+				AB2E4033220EC15800ABD6D7 /* Modules */,
+				AB2E4055220EE67F00ABD6D7 /* Extensions */,
+				AB2E4066220F1E1000ABD6D7 /* Utils */,
 				AB2E4028220EC03F00ABD6D7 /* Assets.xcassets */,
 				AB2E402A220EC03F00ABD6D7 /* LaunchScreen.storyboard */,
 				AB2E402D220EC03F00ABD6D7 /* Info.plist */,
-				AB2E4025220EC03C00ABD6D7 /* ForexQuotes.xcdatamodeld */,
 			);
 			path = ForexQuotes;
+			sourceTree = "<group>";
+		};
+		AB2E4033220EC15800ABD6D7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E4038220EC20800ABD6D7 /* Quotes */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AB2E4035220EC1B700ABD6D7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E405B220EFA0100ABD6D7 /* Quotes */,
+				AB2E4058220EF70C00ABD6D7 /* SaveService */,
+				AB2E4050220ECE2C00ABD6D7 /* ApiProvider */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AB2E4036220EC1CD00ABD6D7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E4078220F2F9800ABD6D7 /* ForexApiConstants.swift */,
+				AB2E407A220F316700ABD6D7 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		AB2E4037220EC1DA00ABD6D7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E4053220EE25E00ABD6D7 /* Quote.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		AB2E4038220EC20800ABD6D7 /* Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E4076220F254000ABD6D7 /* QuotesAssembler.swift */,
+				AB2E406E220F246100ABD6D7 /* Interactor */,
+				AB2E4069220F23D800ABD6D7 /* Presenter */,
+				AB2E404D220EC8B200ABD6D7 /* Adapters */,
+				AB2E404C220EC8A900ABD6D7 /* View */,
+			);
+			path = Quotes;
+			sourceTree = "<group>";
+		};
+		AB2E4046220EC70100ABD6D7 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E404A220EC88500ABD6D7 /* TableBaseAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		AB2E404C220EC8A900ABD6D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E4061220F103E00ABD6D7 /* QuotesCell */,
+				AB2E403D220EC3C800ABD6D7 /* Quotes.storyboard */,
+				AB2E4039220EC22600ABD6D7 /* QuotesViewController.swift */,
+				AB2E406F220F248D00ABD6D7 /* QuotesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB2E404D220EC8B200ABD6D7 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E404E220EC8C500ABD6D7 /* QuotesTableAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		AB2E4050220ECE2C00ABD6D7 /* ApiProvider */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E4051220ECE4800ABD6D7 /* ForexApiProvider.swift */,
+			);
+			path = ApiProvider;
+			sourceTree = "<group>";
+		};
+		AB2E4055220EE67F00ABD6D7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E4056220EE69A00ABD6D7 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AB2E4058220EF70C00ABD6D7 /* SaveService */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E4059220EF71E00ABD6D7 /* SaveService.swift */,
+			);
+			path = SaveService;
+			sourceTree = "<group>";
+		};
+		AB2E405B220EFA0100ABD6D7 /* Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E405C220EFA0F00ABD6D7 /* QuotesService.swift */,
+			);
+			path = Quotes;
+			sourceTree = "<group>";
+		};
+		AB2E4061220F103E00ABD6D7 /* QuotesCell */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E4062220F105800ABD6D7 /* QuotesCell.swift */,
+				AB2E4063220F105800ABD6D7 /* QuotesCell.xib */,
+				AB2E405F220F070F00ABD6D7 /* QuoteCellModel.swift */,
+			);
+			path = QuotesCell;
+			sourceTree = "<group>";
+		};
+		AB2E4066220F1E1000ABD6D7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E4067220F1E3300ABD6D7 /* TimeConventer.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AB2E4069220F23D800ABD6D7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E406C220F240700ABD6D7 /* QuotesPresenter.swift */,
+				AB2E406A220F23FB00ABD6D7 /* QuotesDefaultPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AB2E406E220F246100ABD6D7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E4072220F24F000ABD6D7 /* QuotesInteractor.swift */,
+				AB2E4074220F24FD00ABD6D7 /* QuotesDefaultInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +307,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB2E4065220F105800ABD6D7 /* QuotesCell.xib in Resources */,
 				AB2E402C220EC03F00ABD6D7 /* LaunchScreen.storyboard in Resources */,
+				AB2E403E220EC3C800ABD6D7 /* Quotes.storyboard in Resources */,
 				AB2E4029220EC03F00ABD6D7 /* Assets.xcassets in Resources */,
-				AB2E4024220EC03C00ABD6D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +321,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB2E4021220EC03C00ABD6D7 /* ViewController.swift in Sources */,
-				AB2E4027220EC03C00ABD6D7 /* ForexQuotes.xcdatamodeld in Sources */,
+				AB2E404B220EC88500ABD6D7 /* TableBaseAdapter.swift in Sources */,
+				AB2E406B220F23FB00ABD6D7 /* QuotesDefaultPresenter.swift in Sources */,
+				AB2E404F220EC8C500ABD6D7 /* QuotesTableAdapter.swift in Sources */,
+				AB2E403A220EC22600ABD6D7 /* QuotesViewController.swift in Sources */,
+				AB2E4077220F254000ABD6D7 /* QuotesAssembler.swift in Sources */,
+				AB2E4057220EE69A00ABD6D7 /* Extensions.swift in Sources */,
+				AB2E405A220EF71E00ABD6D7 /* SaveService.swift in Sources */,
+				AB2E4052220ECE4800ABD6D7 /* ForexApiProvider.swift in Sources */,
+				AB2E4060220F070F00ABD6D7 /* QuoteCellModel.swift in Sources */,
+				AB2E4054220EE25E00ABD6D7 /* Quote.swift in Sources */,
+				AB2E405D220EFA0F00ABD6D7 /* QuotesService.swift in Sources */,
+				AB2E4075220F24FD00ABD6D7 /* QuotesDefaultInteractor.swift in Sources */,
+				AB2E4068220F1E3300ABD6D7 /* TimeConventer.swift in Sources */,
+				AB2E406D220F240700ABD6D7 /* QuotesPresenter.swift in Sources */,
+				AB2E4064220F105800ABD6D7 /* QuotesCell.swift in Sources */,
+				AB2E407B220F316700ABD6D7 /* Constants.swift in Sources */,
+				AB2E4073220F24F000ABD6D7 /* QuotesInteractor.swift in Sources */,
 				AB2E401F220EC03C00ABD6D7 /* AppDelegate.swift in Sources */,
+				AB2E4070220F248D00ABD6D7 /* QuotesView.swift in Sources */,
+				AB2E4079220F2F9800ABD6D7 /* ForexApiConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AB2E4022220EC03C00ABD6D7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AB2E4023220EC03C00ABD6D7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AB2E402A220EC03F00ABD6D7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,8 +479,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FBW5NRVEYY;
+				DEVELOPMENT_TEAM = 8H76T89995;
 				INFOPLIST_FILE = ForexQuotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,8 +498,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FBW5NRVEYY;
+				DEVELOPMENT_TEAM = 8H76T89995;
 				INFOPLIST_FILE = ForexQuotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,19 +534,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		AB2E4025220EC03C00ABD6D7 /* ForexQuotes.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				AB2E4026220EC03C00ABD6D7 /* ForexQuotes.xcdatamodel */,
-			);
-			currentVersion = AB2E4026220EC03C00ABD6D7 /* ForexQuotes.xcdatamodel */;
-			path = ForexQuotes.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = AB2E4013220EC03C00ABD6D7 /* Project object */;
 }
