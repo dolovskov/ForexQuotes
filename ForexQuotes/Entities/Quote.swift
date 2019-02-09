@@ -9,11 +9,9 @@
 import Foundation
 
 struct Quote: Codable {
-    
     var symbol: String
     var price: Double
     var bid: Double
     var ask: Double
     var timestamp: Double
-    
 }
