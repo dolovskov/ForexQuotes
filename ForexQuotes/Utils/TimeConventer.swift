@@ -17,7 +17,7 @@ class TimeConventer {
         }
         let currentInterval = Date().timeIntervalSince1970
         let seconds = currentInterval - time
-        if seconds == 0 {
+        if seconds <= 0 {
             return "Только что"
         }
         if seconds < 60 {
