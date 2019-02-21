@@ -11,8 +11,8 @@ import Foundation
 class QuotesDefaultPresenter: QuotesPresenter {
     
     
-    var view: QuotesView?
-    var interactor: QuotesDefaultInteractor?
+    weak var view: QuotesView?
+    var interactor: QuotesInteractor?
     
     
     func viewDidLoad() {

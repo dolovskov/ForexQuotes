@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol QuotesPresenter {
+protocol QuotesPresenter: class {
     func viewDidLoad()
     func quotesModelLoaded(quotes: [QuoteCellModel])
     func onShowCell(index: Int)

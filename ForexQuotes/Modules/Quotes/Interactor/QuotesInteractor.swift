@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol QuotesInteractor {
+protocol QuotesInteractor: class {
     func getQuotesModel()
     func updateQuote(index: Int)
 }

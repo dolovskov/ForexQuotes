@@ -8,9 +8,9 @@
 
 import Foundation
 
-class QuotesDefaultInteractor {
+class QuotesDefaultInteractor: QuotesInteractor {
     
-    var presenter: QuotesPresenter?
+    weak var presenter: QuotesPresenter?
     var quotesService: QuotesService?
     var quotes: [QuoteCellModel] = []
     

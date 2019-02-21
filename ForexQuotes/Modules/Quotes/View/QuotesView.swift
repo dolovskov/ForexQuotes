@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol QuotesView {
+protocol QuotesView: class {
     func updateQuotesModel(quotesModel: [QuoteCellModel])
     func updateQuote(index: Int, quotesModel: [QuoteCellModel])
     
